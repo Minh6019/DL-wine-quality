@@ -12,9 +12,28 @@ The bearings were mounted on the shaft as shown in Figure 1.
 - GY-61 ADXL3353 accelerometers were mounted on the bearing housing 
 - The sensor location is also shown in Figure. 
 - The recording was saved along the x, y, z axes.
-##### Datasets: 
+#### Datasets: 
    - wine.csv. Contains data recordings of the wine.
-  
+#### Number of Instances
+   - Red wine - 1599; white wine - 4898.
+### Attribute information:
+   For more information, read [Cortez et al., 2009].
+
+   Input variables (based on physicochemical tests):
+   1 - fixed acidity
+   2 - volatile acidity
+   3 - citric acid
+   4 - residual sugar
+   5 - chlorides
+   6 - free sulfur dioxide
+   7 - total sulfur dioxide
+   8 - density
+   9 - pH
+   10 - sulphates
+   11 - alcohol
+   Output variable (based on sensory data): 'type' (1: red wine 0:white wine)
+   12 - quality (score between 0 and 10)
+   
 ### Contributor
 * Hoang Minh (@Minh6019)
 
