@@ -41,7 +41,7 @@ Below are provided the steps that were followed for this project. Each step and 
 
  1. Data visualization: ploting data to detect missing values, data relations and usefulness of features
 
-![](plot/Distribution_vibration.png)
+![](Images/corr_nn.png)
 
 
 
