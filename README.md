@@ -50,23 +50,20 @@ Below are provided the steps that were followed for this project. Each step and 
          - Feature selection: see above
          - Target: 'type' of the wine {1: red, 0: white}
 
-
- 3. Classifier: build classifiers based on the preprocessed data using a variety of techniques
+ 3. Classifier: build classifiers **{1: red wine, 0: white wine}** based on Neural Network (Keras)
    - Define the problem as a classification problem
-   - Define the problem as a regression problem
-   - Feature engineering
-   - Feature normalization
-   - Resampling
-   - Hyper-parameter tuning
-      - Change the learning rate
-      - Change the loss function
-  - etc...
+  ![](Images/base_nn.png)
+
+   - Hyper-parameter tuning:
+  ![](Images/SGD_learn_rate001_nn.png)
+
+  ![](Images/learn_act_nn.png)
+
   - Modify the architecture
       - Number of layers
       - Number of neurons per layer
       - Activation functions
-      - etc...
-      - etc...
+     
 ### Classification techniques with the relative scores
 - Option 1: 45 features
   | Classifier	Test     | Parameter  | F1-score  | CV_ROC_AUC_score|
