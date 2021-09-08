@@ -18,7 +18,7 @@ The bearings were mounted on the shaft as shown in Figure 1.
    - Red wine - 1599; white wine - 4898.
 ### Attribute information:
    For more information, read [Cortez et al., 2009].
-
+   
    Input variables (based on physicochemical tests):
    1 - fixed acidity
    2 - volatile acidity
@@ -31,8 +31,8 @@ The bearings were mounted on the shaft as shown in Figure 1.
    9 - pH
    10 - sulphates
    11 - alcohol
-   Output variable (based on sensory data): 'type' (1: red wine 0:white wine)
    12 - quality (score between 0 and 10)
+   Output variable (based on sensory data): 'type' (1: red wine 0:white wine)
    
 ### Contributor
 * Hoang Minh (@Minh6019)
@@ -44,23 +44,15 @@ Below are provided the steps that were followed for this project. Each step and 
 
 ![](plot/Distribution_vibration.png)
 
-![](plot/acceleration_x.png)
-![](plot/acceleration_y.png)
-![](plot/acceleration_z.png)
-![](plot/time_distribution.png)
-
-We detected the outliers of data in Hertz[Hz] column, the majority data in this column distributes from 0 to 25.5
 ![](plot/boxplot_hert.png)
 
 
- 3. Preprocessing: with the knowledge acquired with the preceding step, apply preprocessing of data including dealing with missing values, drop unuseful features and build new features
-    - Option 1: 
-         - Feature selection: 5 new representative features (i.e. min, max, median, std, mean) derived from the orginal features (timestamp, a1_x, a2_x, a1_y, a2_y, a1_z, a2_z, hz, w). We have 45 features.  
-         - Target: status of bearings
-  
-    - Option 2: 
-         - Feature selection: 12 representative features (i.e. min, max, median, std, entropy, impulse factor, margin factor, frequency center, mean_square_frequency, root_mean_square_frequency, root_variance_frequency,crest_factor) derived from the orginal features (a1_x, a2_x, a1_y, a2_y, a1_z, a2_z,  hz: range of (24-25.5))
-         - Target: status of bearings {1: good, 0: bad}
+ 3. Preprocessing: apply preprocessing of data including dealing with missing values, drop unuseful features and build new features
+    - Build Features and Target: 
+         - Feature selection: 
+         - Target: 'type' of the wine {1: red, 0: white}
+
+
  3. Classifier: build classifiers based on the preprocessed data using a variety of techniques
 
 ### Classification techniques with the relative scores
