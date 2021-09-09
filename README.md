@@ -31,7 +31,7 @@
    11 - alcohol
    12 - quality (score between 0 and 10)
    
-   -Output variable (based on sensory data): 'type' (1: red wine 0:white wine)
+   -Output variable: 'type' (1: red wine 0:white wine)
    
 ### Contributor
 * Hoang Minh (@Minh6019)
@@ -43,14 +43,12 @@ Below are provided the steps that were followed for this project. Each step and 
 
 ![](Images/corr_nn.png)
 
-
-
- 3. Preprocessing: apply preprocessing of data including dealing with missing values, drop unuseful features and build new features
+ 2. Preprocessing: apply preprocessing of data including dealing with missing values, drop unuseful features and build new features
     - Build Features and Target: 
          - Feature selection: see above
          - Target: 'type' of the wine {1: red, 0: white}
 
- 4. Classifier: build model classifiers **{1: red wine, 0: white wine}** based on Neural Network (Keras)
+ 3. Classifier: build model classifiers **{1: red wine, 0: white wine}** based on Neural Network (Keras)
    - 1 st model Neuron Network by Keras:
     ![](Images/base_nn.png)
 
@@ -70,12 +68,15 @@ Below are provided the steps that were followed for this project. Each step and 
      
 ### With GridSearch CV
 - Find : batch_size and epochs
+
  ![](Images/Grid_CV_batch_epochs.png)
 
 - Find : Optimizer
+
  ![](Images/Grid_CV_optimizer.png)
 
 - Find : Optimise number of neurons
+
  ![](Images/Grid_CV_opt_neurons.png)  
   
  ### GridSearchCV with beste parameters.
