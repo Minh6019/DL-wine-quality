@@ -46,8 +46,8 @@ My objectifs are to concentralize on the maximize on the tuning of differents pa
 
  2. Preprocessing: apply preprocessing of data including dealing with missing values, drop unuseful features and build new features
     - Build Features and Target: 
-         - Feature selection: see above
-         - Target: 'type' of the wine {1: red, 0: white}
+         - Feature selection: see above (the input_layer is with: 12 features and 12 neurons)
+         - Target: 'type' of the wine {1: red, 0: white} (the out_layer is with: 1 target and 1 neuron)
 
  3. Classifier: build model classifiers **{1: red wine, 0: white wine}** based on Neural Network (Keras)
    - 1 st model Neuron Network by Keras:
