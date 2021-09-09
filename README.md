@@ -51,27 +51,31 @@ Below are provided the steps that were followed for this project. Each step and 
          - Target: 'type' of the wine {1: red, 0: white}
 
  4. Classifier: build classifiers **{1: red wine, 0: white wine}** based on Neural Network (Keras)
-   - Define the problem as a classification problem
-  ![](Images/base_nn.png)
+   - Use Keras to design the Neuron Network:
+   ![](Images/base_nn.png)
 
    - Hyper-parameter tuning:
-  ![](Images/SGD_learn_rate001_nn.png)
+   ![](Images/SGD_learn_rate001_nn.png)
 
-  ![](Images/learn_act_nn.png)
+   ![](Images/learn_act_nn.png)
 
   - Modify the architecture
       - Number of layers
       ![](Images/nb_layers_nn.png)
+      
       - Number of neurons per layer
       ![](Images/nl2_nn_8.png)
+      
       - Activation functions
       ![](Images/acivation_nn.png)
      
 ### With GridSearch CV
 - Find : batch_size and epochs
 ![](Images/Grid_CV_batch_epochs.png)
+
 - Find : Optimizer
 ![](Images/Grid_CV_optimizer.png)
+
 - Find : Optimise number of neurons
 ![](Images/Grid_CV_opt_neurons.png)  
   
