@@ -51,12 +51,12 @@ Below are provided the steps that were followed for this project. Each step and 
  3. Classifier: build model classifiers **{1: red wine, 0: white wine}** based on Neural Network (Keras)
    - 1 st model Neuron Network by Keras:
    
-    ![](Images/base_nn.png)
+   ![](Images/base_nn.png)
 
    - Hyper-parameter tuning:
    
-    ![](Images/SGD_learn_rate001_nn.png)
-    ![](Images/learn_act_nn.png)
+   ![](Images/SGD_learn_rate001.png)
+   ![](Images/learn_act_nn.png)
 
   - Modify the architecture
       - Number of layers
