@@ -50,7 +50,7 @@ Below are provided the steps that were followed for this project. Each step and 
          - Feature selection: see above
          - Target: 'type' of the wine {1: red, 0: white}
 
- 3. Classifier: build classifiers **{1: red wine, 0: white wine}** based on Neural Network (Keras)
+ 4. Classifier: build classifiers **{1: red wine, 0: white wine}** based on Neural Network (Keras)
    - Define the problem as a classification problem
   ![](Images/base_nn.png)
 
@@ -61,34 +61,22 @@ Below are provided the steps that were followed for this project. Each step and 
 
   - Modify the architecture
       - Number of layers
+      ![](Images/nb_layers_nn.png)
       - Number of neurons per layer
+      ![](Images/nl2_nn_8.png)
       - Activation functions
+      ![](Images/acivation_nn.png)
      
-### Classification techniques with the relative scores
-- Option 1: 45 features
-  | Classifier	Test     | Parameter  | F1-score  | CV_ROC_AUC_score|
-  |---------------------|------------|------------|---------|
-  |KNN	|k=5	| 0.95 	| 0.94	|
-  |KNN with validation|	k=5	|0.95 |0.94 |
-  |KNN with GridSearchCV	| k=1	|0.95	|0.94 |
-  |Random Forest with GridSearchCV	| k=100,200	| 0.95	|1.0 |
+### With GridSearch CV
+- Find : batch_size and epochs
+![](Images/Grid_CV_batch_epochs.png)
+- Find : Optimizer
+![](Images/Grid_CV_optimizer.png)
+- Find : Optimise number of neurons
+![](Images/Grid_CV_opt_neurons.png)  
   
-  ![](plot/KNN_validation.png)
-  
-  #### Conclusion: With the model Random Forest, GridSearchCV gives the highest score.
-
-- Option 2: 84 features
-  | Classifier Test | Parameter | F1-Score | CV_ROC_AUC_score |
-  | ----------------|-----------|----------|------------------|
-  |KNN| k=5| 0.91| 0.89|
-  |KNN with validation | k=5| 0.91|0.84|
-  |KNN with GridSearchCV| k=4|0.91|0.87|
-  |Random Forest with GridSearchCV| K=100,200|0.87|0.95|
-
-   ![](plot/Knn_plot.png)
-
-#### Conclusion: With the model Random Forest, GridSearchCV gives the highest score. 
-  
+ ### GridSearchCV with beste parameters.
+![](Images/Best_model.png)
 
 ### Folder structures
 * Contains all of the jupyter's notebooks including classifiers, preprocessing and data visualization
