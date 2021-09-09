@@ -52,22 +52,22 @@ Below are provided the steps that were followed for this project. Each step and 
 
  4. Classifier: build model classifiers **{1: red wine, 0: white wine}** based on Neural Network (Keras)
    - Use Keras to design the Neuron Network:
-   ![](Images/base_nn.png)
+ ![](Images/base_nn.png)
 
    - Hyper-parameter tuning:
-   ![](Images/SGD_learn_rate001_nn.png)
+ ![](Images/SGD_learn_rate001_nn.png)
 
-   ![](Images/learn_act_nn.png)
+ ![](Images/learn_act_nn.png)
 
   - Modify the architecture
       - Number of layers
-      ![](Images/nb_layers_nn.png)
+ ![](Images/nb_layers_nn.png)
       
       - Number of neurons per layer
-      ![](Images/nl2_nn_8.png)
+  ![](Images/nl2_nn_8.png)
       
       - Activation functions
-      ![](Images/acivation_nn.png)
+  ![](Images/acivation_nn.png)
      
 ### With GridSearch CV
 - Find : batch_size and epochs
