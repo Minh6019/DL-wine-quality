@@ -37,7 +37,8 @@
 * Hoang Minh (@Minh6019)
 
 ### Method
-Below are provided the steps that were followed for this project. Each step and classifiers have their own document.
+Below are provided the steps that were followed for this project.
+My objectifs are to concentralize on the maximize on the tuning of differents parameters and functions of the Keras model to have the optimum one.
 
  1. Data visualization: ploting data to detect missing values, data relations and usefulness of features
 
